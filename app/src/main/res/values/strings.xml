@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fam Doc Machine</string>
+    <string name="welcome">welcome</string>
+    <string name="patient">Patient</string>
+    <string name="emergency"> Help </string>
+    <string name="doctor">Doctor</string>
+</resources>
