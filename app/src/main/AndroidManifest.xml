@@ -9,7 +9,11 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Patient"></activity>
+        <activity
+            android:name=".Diseases"
+            android:label="@string/title_activity_diseases"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Patient" />
         <activity android:name=".Doctor" />
         <activity android:name=".MainActivity">
             <intent-filter>
