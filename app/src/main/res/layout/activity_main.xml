@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,82 +8,83 @@
     android:background="@drawable/dark"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/welcome"
-        android:src="@drawable/welcome"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/doc"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:contentDescription="@string/welcome"
-        app:layout_constraintLeft_toLeftOf="@id/welcome"
-        app:layout_constraintTop_toBottomOf="@id/welcome"
-        android:src="@drawable/doc" />
+        <ImageView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/welcome"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/patients"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/welcome"
-        app:layout_constraintLeft_toLeftOf="@id/doc"
-        app:layout_constraintTop_toBottomOf="@id/doc"
-        android:src="@drawable/patients" />
+        <ImageView
+            android:id="@+id/doc"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/doc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome" />
 
-    <ImageView
-        android:id="@+id/ambulance1"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/welcome"
-        app:layout_constraintLeft_toLeftOf="@id/patients"
-        app:layout_constraintTop_toBottomOf="@id/patients"
-        android:src="@drawable/ambulance" />
+        <ImageView
+            android:id="@+id/patients"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/patients"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/doctor" />
 
-    <Button
-        android:id="@+id/doctor"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/doctor"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/doc"
-        app:layout_constraintRight_toRightOf="@+id/welcome"
-        app:layout_constraintTop_toTopOf="@+id/doc" />
+        <ImageView
+            android:id="@+id/ambulance1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/welcome"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patient"
+            android:src="@drawable/ambulance" />
 
-    <Button
-        android:id="@+id/patient"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/patient"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/patients"
-        app:layout_constraintRight_toRightOf="@+id/welcome"
-        app:layout_constraintTop_toTopOf="@+id/patients" />
+        <Button
+            android:id="@+id/doctor"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/doc"
+            app:layout_constraintRight_toRightOf="@id/doc"
+            app:layout_constraintTop_toBottomOf="@+id/doc" />
 
-    <Button
-        android:id="@+id/ambulance"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/emergency"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ambulance1"
-        app:layout_constraintRight_toRightOf="@+id/welcome"
-        app:layout_constraintTop_toTopOf="@+id/ambulance1" />
+        <Button
+            android:id="@+id/patient"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/patients"
+            app:layout_constraintRight_toRightOf="@+id/patients"
+            app:layout_constraintTop_toBottomOf="@+id/patients" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/ambulance"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emergency"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/ambulance1"
+            app:layout_constraintLeft_toLeftOf="@+id/ambulance1"
+            app:layout_constraintTop_toBottomOf="@+id/ambulance1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

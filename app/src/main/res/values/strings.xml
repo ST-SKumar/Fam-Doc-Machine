@@ -4,4 +4,40 @@
     <string name="patient">Patient</string>
     <string name="emergency"> Help </string>
     <string name="doctor">Doctor</string>
+    <string name="select_age">Your Age</string>
+    <string name="colon">:</string>
+    <string name="phone_no">Enter Phone No</string>
+    <string name="pName">Enter Name</string>
+    <string name="confirm">Confirm</string>
+    <string name="hintNo">7986616625</string>
+    <string name="med">Select Medicine</string>
+    <string name="qnt">Select Quantity</string>
+    <string-array name="age">
+        <item>2–4</item>
+        <item>5–8</item>
+        <item>9–12</item>
+        <item>13–20</item>
+        <item>21–40</item>
+        <item>41–65</item>
+    </string-array>
+    <string-array name="qntList">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="medList">
+        <item>Crocin</item>
+        <item>Disprin</item>
+        <item>Califorce</item>
+        <item>Magnessium</item>
+        <item>Paracetamol</item>
+        <item>Hydrochloride</item>
+    </string-array>
 </resources>
