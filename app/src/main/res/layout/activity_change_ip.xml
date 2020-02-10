@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChangeIP">
+
+    <EditText
+        android:id="@+id/eIp"
+        style="@style/et"
+        android:hint="@string/ipad"
+        android:importantForAutofill="no" />
+    <TextView
+        android:id="@+id/path"
+        android:text=""
+        android:textColor="@color/accent"
+        android:layout_width="match_parent"
+        style="@style/tv" />
+
+    <Button
+        android:id="@+id/ipad"
+        style="@style/btnStyle"
+        android:onClick="change"
+        android:text="@string/confirm" />
+</RelativeLayout>

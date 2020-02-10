@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
+    <LinearLayout
+        style="@style/lineStyle">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/welcome" />
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/doc" />
+
+        <Button
+            android:id="@+id/doctor"
+            android:text="@string/doctor"
+            style="@style/btnStyle"/>
+
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/patients" />
+        <Button
+            android:id="@+id/patient"
+            android:text="@string/patient"
+            style="@style/btnStyle" />
+
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/ambulance" />
+        <Button
+            android:id="@+id/help"
+            android:onClick="cngIp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/emergency"
+            style="@style/btnStyle" />
+    </LinearLayout>
+</ScrollView>

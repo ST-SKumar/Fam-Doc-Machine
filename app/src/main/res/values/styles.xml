@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    </style>
+    <style name="btnStyle">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/capsule_bw</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="imgStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+    </style>
+    <style name="lineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="rLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:background">#03A9F4</item>
+    </style>
+    <style name="cln">
+        <item name="android:text">@string/colon</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="cb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:buttonTint" tools:ignore="NewApi">@color/accent</item>
+    </style>
+    <style name="rb">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="mrb_selectorSize">10dp</item>
+        <item name="mrb_tickLabelSize">6sp</item>
+        <item name="mrb_tickHeight">4dp</item>
+        <item name="mrb_tickInterval">2</item>
+        <item name="mrb_tickStart">2</item>
+        <item name="mrb_tickEnd">10</item>
+        <item name="mrb_tickTopLabels">@array/conk</item>
+        <item name="mrb_rangeBar">false</item>
+        <item name="mrb_connectingLineColors">@array/connecting_colors</item>
+    </style>
+    <style name="et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:ems">7</item>
+        <item name="android:inputType">text</item>
+    </style>
+    <style name="otp_et">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="sv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/dark</item>
+    </style>
+</resources>

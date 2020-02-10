@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Diseases">
+    <RelativeLayout
+        android:layout_gravity="end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        style="@style/lineStyle">
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/patients" />
+        <RelativeLayout
+            style="@style/rLine">
+            <CheckBox
+                android:id="@+id/cbFever"
+                style="@style/cb"
+                android:text="@string/fever" />
+            <com.appyvet.materialrangebar.RangeBar
+                android:id="@+id/rbFever"
+                style="@style/rb"
+                app:mrb_tickInterval="1"
+                app:mrb_tickStart="98"
+                app:mrb_tickEnd="102"
+                app:mrb_tickTopLabels="@array/fever"/>
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/rLine">
+
+            <CheckBox
+                android:id="@+id/cbCold"
+                style="@style/cb"
+                android:text="@string/cold" />
+
+            <com.appyvet.materialrangebar.RangeBar
+                android:id="@+id/rbCold"
+                style="@style/rb" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/rLine">
+
+            <CheckBox
+                android:id="@+id/cbCough"
+                style="@style/cb"
+                android:text="@string/cough" />
+
+            <com.appyvet.materialrangebar.RangeBar
+                android:id="@+id/rbCough"
+                style="@style/rb" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/rLine">
+
+            <CheckBox
+                android:id="@+id/cbKPain"
+                style="@style/cb"
+                android:text="@string/knee_pain" />
+
+            <com.appyvet.materialrangebar.RangeBar
+                android:id="@+id/rbKPain"
+                style="@style/rb" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/rLine">
+
+            <CheckBox
+                android:id="@+id/cbNPain"
+                style="@style/cb"
+                android:text="@string/neck_pain" />
+
+            <com.appyvet.materialrangebar.RangeBar
+                android:id="@+id/rbNPain"
+                style="@style/rb" />
+        </RelativeLayout>
+
+        <Button
+            style="@style/btnStyle"
+            android:onClick="confirm"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

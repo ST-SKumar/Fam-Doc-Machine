@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Doctor">
+
+
+    <LinearLayout
+        style="@style/lineStyle">
+
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/doc" />
+
+        <RelativeLayout
+            style="@style/rLine">
+
+            <TextView
+                style="@style/tv"
+                android:text="@string/med" />
+
+            <TextView
+                style="@style/cln" />
+
+            <Spinner
+                android:id="@+id/medList"
+                style="@style/et" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/rLine">
+
+            <TextView
+                style="@style/tv"
+                android:text="@string/qnt" />
+
+            <TextView
+                style="@style/cln" />
+
+            <Spinner
+                android:id="@+id/qntList"
+                style="@style/et" />
+        </RelativeLayout>
+
+        <Button
+            style="@style/btnStyle"
+            android:text="@string/confirm" />
+    </LinearLayout>
+</ScrollView>

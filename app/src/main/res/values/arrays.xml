@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="connecting_colors">
+        <item>#00F000</item>
+        <item>#F00000</item>
+    </string-array>
+
+    <string-array name="fever">
+        <item>98C</item>
+        <item>99C</item>
+        <item>100C</item>
+        <item>101C</item>
+        <item>102C</item>
+    </string-array>
+    <string-array name="conk">
+        <item>2day</item>
+        <item>4day</item>
+        <item>6day</item>
+        <item>8day</item>
+        <item>10day</item>
+    </string-array>
+</resources>

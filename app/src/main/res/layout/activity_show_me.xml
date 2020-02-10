@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ShowMe">
+    <RelativeLayout
+        android:layout_gravity="end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/ll"
+            style="@style/lineStyle">
+
+            <RelativeLayout
+                style="@style/rLine">
+
+                <TextView
+                    style="@style/tv"
+                    android:text="@string/pName" />
+
+                <TextView
+                    style="@style/cln"/>
+
+                <EditText
+                    android:id="@+id/edtN"
+                    style="@style/et"
+                    android:hint="@string/sk"
+                    android:importantForAutofill="no" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/rLine">
+
+                <TextView
+                    android:text="@string/phone_no"
+                    style="@style/tv" />
+
+                <TextView
+                    style="@style/cln"/>
+
+                <EditText
+                    android:id="@+id/edtP"
+                    style="@style/et"
+                    android:hint="@string/hintNo"
+                    android:importantForAutofill="no"
+                    android:inputType="phone" />
+            </RelativeLayout>
+
+            <Button
+                style="@style/btnStyle"
+                android:onClick="confirm"
+                android:text="@string/confirm" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/vP"
+            android:layout_below="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintNo"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </RelativeLayout>
+</ScrollView>

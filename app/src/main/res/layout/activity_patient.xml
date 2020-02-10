@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/sv"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Patient">
+    <RelativeLayout
+        android:layout_gravity="end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        style="@style/lineStyle">
+        <ImageView
+            style="@style/imgStyle"
+            android:contentDescription="@string/welcome"
+            android:src="@drawable/patients" />
+
+        <RelativeLayout
+            style="@style/rLine">
+
+            <TextView
+                style="@style/tv"
+                android:text="@string/select_age"/>
+
+            <TextView
+                style="@style/cln"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/et"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/rLine">
+
+            <TextView
+                style="@style/tv"
+                android:text="@string/pName" />
+
+            <TextView
+                style="@style/cln"/>
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/et"
+                android:hint="@string/sk"
+                android:importantForAutofill="no" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/rLine">
+
+            <TextView
+                android:text="@string/phone_no"
+                style="@style/tv" />
+
+            <TextView
+                style="@style/cln"/>
+
+            <EditText
+                android:id="@+id/edtPhone"
+                style="@style/et"
+                android:hint="@string/hintNo"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+        <Button
+            style="@style/btnStyle"
+            android:onClick="confirm"
+            android:text="@string/confirm" />
+        <Button
+            style="@style/btnStyle"
+            android:background="#00000000"
+            android:onClick="confirm2" />
+    </LinearLayout>
+
+    <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>
